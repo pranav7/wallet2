@@ -1,0 +1,34 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        
+        <EditText 
+            android:id="@+id/regcode_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter registration code"
+            android:layout_weight="1"/>
+        
+        <Button 
+            android:id="@+id/validcode_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Go"
+            android:onClick="performCodeValidation"/>
+        
+    </LinearLayout>
+    
+    <Button 
+                android:id="@+id/skipcode_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Skip"
+            android:onClick="skipCodeValidation"/>
+    
+</LinearLayout>

@@ -1,0 +1,42 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"/>
+        
+        <EditText 
+            android:id="@+id/mobilenum_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter mobile number"
+            android:inputType="phone"
+            android:digits="1234567890"
+            android:maxLength="10"
+            android:layout_weight="1"/>
+        
+        <Button 
+            android:id="@+id/login_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Login"
+            android:onClick="performLogin"/>
+        
+    </LinearLayout>
+    
+    <Button 
+                android:id="@+id/skiplogin_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Skip"
+            android:onClick="skipLogin"/>
+    
+</LinearLayout>
